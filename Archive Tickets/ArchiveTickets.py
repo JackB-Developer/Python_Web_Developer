@@ -3,18 +3,20 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from credentials import WealthLogin
 import easygui
 
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 
-
+'''
 # Logs into Wealth
 def WealthLogin():
     loginBox = driver.find_element_by_xpath('//*[@id="email"]').send_keys(email)
     passBox = driver.find_element_by_xpath('//*[@id="password"]').send_keys(password)
     loginBtn = driver.find_element_by_xpath('//*[@id="submitloading"]').click()
     sleep(2)
+'''
 
 # Switches to Unassigned page
 def unassignedTickets():
