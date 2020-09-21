@@ -1,0 +1,64 @@
+Git is a decentralized source control system
+
+3 States of Gits
+1. Working Directory
+2. Staging Area - pre commit git index
+3. Repository - Commit history .git folder
+
+GitHub Remote depository
+Master Branch
+Timeline
+
+======================================
+Start a New LOCAL Repository
+
+
+======================================
+Git for windows
+mkdir Make Directory
+pwd Shows what directory you are in
+ls List
+git status
+Untracked files have not been committed
+git commit -m "NOTES" Commits local changes
+git push origin master
+
+======================================
+Clone a repository
+Copy the URL
+
+Git Basic Workflow with GitHub
+A quick introduction to Git with an hands on example starting with GitHub, making local changes and back to GitHub again.
+Setup the Project Folder
+Command Listing
+pwd
+mkdir projects
+cd projects
+pwd
+Git Configuration
+Command Listing
+git version
+git config --global user.name "Abe Lincoln"
+git config --global user.email "mrabe@git.training"
+git config --global --list
+Copy the Repository (clone)
+Command Listing
+# paste in your GitHub HTTPS clone URL
+git clone https://github.com/prezlincoln/github-demo.git
+ls
+cd github-demo
+ls
+git status
+The First Commit
+Command Listing
+echo "Test Git Quick Start demo" >> start.txt
+ls
+cat start.txt
+git status
+git add start.txt
+git status
+git commit -m "Adding start text file"
+git status
+Publishing Changes to GitHub (push)
+Command Listing
+git push origin master
