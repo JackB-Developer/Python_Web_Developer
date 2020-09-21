@@ -3,11 +3,10 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from browser import driver
 from credentials import WealthLogin
 import easygui
 
-
-PATH = "C:\Program Files (x86)\chromedriver.exe"
 
 '''
 # Logs into Wealth
@@ -94,8 +93,8 @@ def ticketCount():
     totalCount = driver.find_element_by_xpath('//*[@id="tickets-count"]')
 
 # Opens Chrome and goes to Wealth Login page
-driver = webdriver.Chrome(PATH)
-driver.get('https://wealth.truechoicetech.com/login')
+#driver = webdriver.Chrome(PATH)
+#driver.get('https://wealth.truechoicetech.com/login')
 
 main_page = driver.current_window_handle
 sleep(2)
